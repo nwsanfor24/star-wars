@@ -39,10 +39,15 @@ app.get("/api/characters", function(req, res) {
   return res.json(characters);
 });
 
+//Cannot GET characters
+
 // What does this route do?
+//Lists each character object with info
 app.get("/api/characters/:character", function(req, res) {
   // What does this code do?
+  //
   var chosen = req.params.character;
+  //const { character } = req.params;
   console.log(chosen);
 
   // What does this code do?
